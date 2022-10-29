@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <!-- custom css  -->
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    
+<header id="header" class="fixed-top">
+   <div class="container-lg">
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="/img/logo.png" alt="">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+           <i class="fa-solid fa-bars"></i>
+       
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"> <span><i class="fa-solid fa-bookmark"></i></span></a>
+                  </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">jobs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">communities</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">people</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">analytics</a>
+              </li>
+              
+            
+            </ul>
+             <div>
+                <form class="d-flex right_nav">
+                    <div class="input_search">
+                        <input class="form-control me-2" id="seatch" type="search" placeholder="Search" aria-label="Search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <a href="" class="plus-icon"><i class="fa-solid fa-plus"></i></a>
+                    </div>
+                        <div class="icons">
+                            
+                            <a href="" class="img-icon"><i class="fa-regular fa-image"></i></a>
+                            <a href="" class="bell-icon">
+                              <i class="fa-solid fa-bell"></i>
+                            </a>
+                            <a href="" class="user-icon"><i class="fa-solid fa-user"></i></a>
+                        </div>
+                  </form>
+             </div>
+          </div>
+        </div>
+      </nav>
+   </div>
+</header>
+
+
+
+
+
+
+    <section id="form">
+        <div class="container-lg">
+           <div class="contents_wrapper">
+            <div class="row form_header">
+                <div class="form_header col-12">
+                    <div class="setting">
+                        <p><i class="fa-solid fa-angle-left"></i>  <a href="#">setting</a> </p>
+                        <h4>My Profile</h4>
+
+                    </div>
+                </div>
+            </div>
+
+          <div class="form_main_wrapper">
+            
+            <form class="row" autocomplete="off" id="form">
+                       <div class="col-md-6">
+                        
+
+                        <div class="personal_information">
+
+                            <p>perosnal information</p>
+                            <span>Profile Photo</span>
+
+                            <div class="mb-3 upload_file_wrapper">
+                                <p class="upload_image"><i class="fa-solid fa-user"></i> </p>
+                                 <!-- <img src="" class="upload_image" alt=""> -->
+
+                                 <a href="" class="upload-file">Upload photo</a>
+                                <input class="form-control fileUpload" type="file" multiple>
+                                
+                              </div>
+                        </div>
+
+
+
+
+                        <div class="mb-3 fristName">
+                            <label for="firstName" class="form-label">First Name</label>
+                            <input type="text" class="form-control" id="firstName" required autocomplete="nope">
+                            <span class="error-text"> <i class="fa-solid fa-xmark"></i> Please provide non empty value in this field</span>
+                          </div>
+                        <div class="mb-3 lastName">
+                            <label for="lastName" class="form-label">Last Name</label>
+                            <input type="text" class="form-control" id="lastName" required autocomplete="nope">
+                            <!-- <span class="error-text"> <i class="fa-solid fa-xmark"></i> Please provide non empty value in this field</span> -->
+                          </div>
+                        <div class="mb-3">
+                            <label for="position" class="form-label">Position</label>
+                            <input type="text" class="form-control" id="position" autocomplete="nope">
+                          </div>
+                       </div>
+                       <div class="col-md-6">
+                        <div class="contact_info">
+                            <p>contact information</p>
+                            <span>Used in merge fields or email templates</span>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="firstName" class="form-label">stree address</label>
+                            <input type="text" class="form-control" id="firstName" autocomplete="nope">
+                          </div>
+                        <div class="mb-3">
+                            <label for="lastName" class="form-label">city</label>
+                            <input type="text" class="form-control" id="lastName" autocomplete="nope">
+                          </div>
+                        <div class="mb-3">
+                            <label for="position" class="form-label">postal code</label>
+                            <input type="text" class="form-control" id="position" autocomplete="nope">
+                          </div>
+                          <div class="mb-3 select-option">
+                            <p>Country</p>
+                            <div class="select-box">
+                              <div class="options-container">
+                                <div class="option">
+                                  <input
+                                    type="radio"
+                                    class="radio"
+                                    id="southafrica"
+                                    name="category"
+                                  />
+                                  <label for="southafrica">south africa</label>
+                                </div>
+                      
+                                <div class="option">
+                                  <input type="radio" class="radio" id="unitedstate" name="category" />
+                                  <label for="unitedstate">United state</label>
+                                </div>
+                      
+                                <div class="option">
+                                  <input type="radio" class="radio" id="india" name="category" />
+                                  <label for="india">India</label>
+                                </div>
+                      
+                                <div class="option">
+                                  <input type="radio" class="radio" id="pakistan" name="category" />
+                                  <label for="pakistan">pakistan</label>
+                                </div>
+                      
+                                <div class="option">
+                                  <input type="radio" class="radio" id="russia" name="category" />
+                                  <label for="russia">russia</label>
+                                </div>
+                      
+                              
+                              </div>
+                      
+                              <div class="selected">
+                              <small>--Please select--</small>
+                              </div>
+                            </div>
+                          
+                          </div>
+                          <div class="mb-3">
+                            <label for="phone" class="form-label">work phone</label>
+                            <input type="text" class="form-control" id="phone" autocomplete="nope">
+                          </div>
+                          <div class="mb-3">
+                            <label for="position" class="form-label">cell phone</label>
+                            <input type="text" class="form-control" id="position" autocomplete="nope">
+                          </div>
+                       </div>
+                       
+                        
+
+
+
+
+
+
+
+                       <div class="row form_downpart">
+                        <div class="col-md-12">
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Show my name and social profile on job ads I post</label>
+                          </div>
+                          <p>
+                              SmartRecuruiters <a href="#">Privecy Policy</a> and <a href="">Terms of Use</a> 
+  
+                          </p>
+                          <button type="submit" class="btn btn-primary">Save</button>
+                        </div>
+                       </div>
+             </form>
+          </div>
+           </div>
+                
+                
+           
+           
+        </div>
+    </section>
+
+  
+
+
+
+
+
+
+
+
+
+<!-- fontawesome kits  -->
+ <script src="https://kit.fontawesome.com/445c1c83cf.js" crossorigin="anonymous"></script>
+<script src="/js/bootstrap.bundle.min.js"></script>
+<script src="/js/jquery.min.js"></script>
+<script src="/js/form.js"></script>
+</body>
+</html>
